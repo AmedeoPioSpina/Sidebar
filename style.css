@@ -1,0 +1,39 @@
+body header {
+  margin-bottom: 1rem;
+}
+body header nav {
+  display: flex;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+body header nav .sidebar {
+  display: none;
+  background-color: greenyellow;
+  flex-direction: column;
+  height: 100vh;
+  left: -10rem;
+  position: absolute;
+  width: 10rem;
+}
+body header nav .sidebar p {
+  background-color: green;
+  text-align: center;
+}
+body header nav .sidebar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header nav .sidebarStatusBtn {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0.5rem 0 0.5rem 0.5rem;
+}
+body header nav .sidebarStatusBtn img {
+  width: 2rem;
+}
+body main p {
+  border: 2px solid black;
+  margin: 0 0.5rem 1rem 0.5rem;
+}/*# sourceMappingURL=style.css.map */
