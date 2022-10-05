@@ -1,17 +1,19 @@
 const sidebarStatusBtn = document.querySelector(".sidebarStatusBtn");
 const sidebar = document.querySelector(".sidebar");
 
-sidebarStatusBtn.onclick = () => {
+sidebarStatusBtn.onclick = async() => {
     if(sidebarStatusBtn.dataset.status === "off"){
         sidebarStatusBtn.dataset.status = "on";
-        sidebar.style.display = "flex";
-        sidebar.style.left = "0";
+        sidebar.style.visibility = "visible";
+        sidebar.style.transform = "translateX(0)";
         sidebarStatusBtn.style.marginLeft = "10.5rem";
     }
     else{
         sidebarStatusBtn.dataset.status = "off";
-        sidebar.style.display = "none";
-        sidebar.style.left = "-10rem";
+        sidebar.style.transform = "translateX(-10rem)";
+        setTimeout(() => {
+            sidebar.style.visibility = "hidden";
+        }, 2000);
         sidebarStatusBtn.style.marginLeft = "0.5rem";
     }
 }

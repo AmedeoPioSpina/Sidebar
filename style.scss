@@ -6,11 +6,13 @@ body{
             border-bottom: 1px solid black;
             position: relative;
             .sidebar{
-                display: none;
+                display: flex;
+                visibility: hidden;
                 background-color: greenyellow;
                 flex-direction: column;
                 height: 100vh;
-                left: -10rem;
+                transform: translateX(-10rem);
+                transition: transform 2s;
                 position: absolute;
                 width: 10rem;
                 p{
@@ -28,6 +30,7 @@ body{
                 background-color: rgb(255, 255, 255);
                 padding: 0;
                 margin: 0.5rem 0 0.5rem 0.5rem;
+                transition: margin 2s;
                 img{
                     width: 2rem;
                 }
